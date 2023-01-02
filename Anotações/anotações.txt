@@ -1,0 +1,19 @@
+-- NODE JS --
+
+NODE : Para criar um package.json é só entrar no terminal e digitar: npm init -y
+NODE : Bibliotecas: npm i add express (construção API) nodemon (Compilar em tempo real) mysql cors (nao ocorrer conflito por ser local)
+NODE : instalar os packages: npm i express nodemon mysql cors
+
+1 - No nosso index principal eu tenho o 'userRoutes', vou pegar o caminho principal e adicionar esse userRoutes: app.use("/", userRoutes);
+2 - users.js: estou indicando que é uma Rota através do "const router = express.Router()";
+3 - Metodo get (onde eu quero pegar algo) eu pego a variavel router e adiciono o get pegando pela data inicial: router.get("/", getUsers);
+4 - Esse getUsers vai la no nosso banco e trás as informações (user.js)
+
+*-- --*
+
+-- REACT JS --
+
+Vamos adicionar algumas bibliotecas: npm i styled-components (estilização) axios (consumir a API do back-end) react-icons (icones) react-toastify (toastify de adc, alt e exc)
+
+No App.js estamos exportando algumas bibliotecas lá em cima e salvando em nomes exemplo: styled.
+depois criamos uma variavel container (exemplo) e colocamos um styled.div e formatamos o css logo a baixo, depois só chamamos essa variavel já formatada
